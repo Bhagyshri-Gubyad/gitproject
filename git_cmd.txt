@@ -1,0 +1,45 @@
+sudo yum install git -y
+git --version
+
+git config --global user.name "devops"
+git config --global user.email "devopsmca@123gmail.com"
+git init
+git remote add origin gitlinkurl
+
+
+git pull https://github.com/devopsmca/gitpractice.git
+
+git add .
+
+git commit -m "done" 
+
+git push origin master -f 
+
+git diff --staged    (staging to commit area diff)
+
+git diff HEAD      (file in working dir but not in stagging area)
+
+git log
+git status -s   for short status
+
+
+  git branch
+git branch testing
+ git branch
+  git checkout testing
+  git branch
+  vi testing.html
+  git add .
+  git commit -m "testing branch"
+  git push facebook testing
+
+git branch -d testing
+git checkout -b secondbranch
+
+git remote remove origin (for remove origin )
+git log
+git log --online (in one line able to see msg & id logs)
+git log -p (one commit detail information)
+git log --since=”1 week ago” (able to see 1 week logs)
+git branch --merged (any code merge in master)
+git branch –v (merged branch with latest commit)
